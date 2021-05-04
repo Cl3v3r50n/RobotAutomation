@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.0 on win32)" generated="20210501 22:38:36.593" rpa="false" schemaversion="2">
+<suite id="s1" name="EscopoVariaveis" source="C:\ROBOT\Treinamento Robot\básico\SuiteSiteTestePractice\Variaveis\EscopoVariaveis.robot">
+<test id="s1-t1" name="Caso de teste 01">
+<kw name="Uma Keyword qualquer 01">
+<kw name="Generate Random String" library="String">
+<var>${GLOBAL_CRIADA_EM_TEMPO_EXECUCAO}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20210501 22:38:36.629" level="INFO">${GLOBAL_CRIADA_EM_TEMPO_EXECUCAO} = a0zmx8tx</msg>
+<status status="PASS" starttime="20210501 22:38:36.628" endtime="20210501 22:38:36.629"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${GLOBAL_CRIADA_EM_TEMPO_EXECUCAO}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20210501 22:38:36.630" level="INFO">${GLOBAL_CRIADA_EM_TEMPO_EXECUCAO} = a0zmx8tx</msg>
+<status status="PASS" starttime="20210501 22:38:36.630" endtime="20210501 22:38:36.630"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${SUITE_CRIADA_EM_TEMPO_EXECUCAO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20210501 22:38:36.631" level="FAIL">Variable '${SUITE_CRIADA_EM_TEMPO_EXECUCAO}' not found.</msg>
+<status status="FAIL" starttime="20210501 22:38:36.630" endtime="20210501 22:38:36.631"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${TESTE_01}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" starttime="20210501 22:38:36.631" endtime="20210501 22:38:36.631"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${TESTE_01}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20210501 22:38:36.631" endtime="20210501 22:38:36.631"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${LOCAL}</var>
+<arg>variável local da KW 01</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20210501 22:38:36.632" endtime="20210501 22:38:36.632"/>
+</kw>
+<status status="FAIL" starttime="20210501 22:38:36.628" endtime="20210501 22:38:36.632"/>
+</kw>
+<kw name="Uma Keyword qualquer 02">
+<status status="NOT RUN" starttime="20210501 22:38:36.632" endtime="20210501 22:38:36.632"/>
+</kw>
+<status status="FAIL" starttime="20210501 22:38:36.628" endtime="20210501 22:38:36.633">Variable '${SUITE_CRIADA_EM_TEMPO_EXECUCAO}' not found.</status>
+</test>
+<test id="s1-t2" name="Caso de teste 02">
+<kw name="Uma Keyword qualquer 03">
+<kw name="Set Variable" library="BuiltIn">
+<var>${LOCAL}</var>
+<arg>variável local da KW 03</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20210501 22:38:36.636" level="INFO">${LOCAL} = variável local da KW 03</msg>
+<status status="PASS" starttime="20210501 22:38:36.635" endtime="20210501 22:38:36.636"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${LOCAL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210501 22:38:36.636" level="INFO">variável local da KW 03</msg>
+<status status="PASS" starttime="20210501 22:38:36.636" endtime="20210501 22:38:36.636"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${GLOBAL_INSTANCIADA}/${GLOBAL_CRIADA_EM_TEMPO_EXECUCAO}/${SUITE_CRIADA_EM_TEMPO_EXECUCAO}/${LOCAL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210501 22:38:36.637" level="FAIL">Variable '${SUITE_CRIADA_EM_TEMPO_EXECUCAO}' not found.</msg>
+<status status="FAIL" starttime="20210501 22:38:36.636" endtime="20210501 22:38:36.637"/>
+</kw>
+<status status="FAIL" starttime="20210501 22:38:36.635" endtime="20210501 22:38:36.637"/>
+</kw>
+<kw name="Uma Keyword qualquer 04">
+<status status="NOT RUN" starttime="20210501 22:38:36.639" endtime="20210501 22:38:36.639"/>
+</kw>
+<status status="FAIL" starttime="20210501 22:38:36.635" endtime="20210501 22:38:36.640">Variable '${SUITE_CRIADA_EM_TEMPO_EXECUCAO}' not found.</status>
+</test>
+<test id="s1-t3" name="Caso de teste 03">
+<kw name="Uma Keyword qualquer 05">
+<msg timestamp="20210501 22:38:36.643" level="FAIL">No keyword with name 'Uma Keyword qualquer 05' found. Did you mean:
+    Uma Keyword Qualquer 03
+    Uma Keyword Qualquer 02
+    Uma Keyword Qualquer 01</msg>
+<status status="FAIL" starttime="20210501 22:38:36.643" endtime="20210501 22:38:36.643"/>
+</kw>
+<status status="FAIL" starttime="20210501 22:38:36.641" endtime="20210501 22:38:36.644">No keyword with name 'Uma Keyword qualquer 05' found. Did you mean:
+    Uma Keyword Qualquer 03
+    Uma Keyword Qualquer 02
+    Uma Keyword Qualquer 01</status>
+</test>
+<doc>Exemplos de escopo de variáveis: globais, suite, teste (teste case) e local (keyword)</doc>
+<status status="FAIL" starttime="20210501 22:38:36.593" endtime="20210501 22:38:36.646"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="EscopoVariaveis">EscopoVariaveis</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
